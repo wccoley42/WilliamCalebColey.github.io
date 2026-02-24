@@ -1,0 +1,12 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #1f1f1f, #343a40);
+    padding: 120px 0;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
