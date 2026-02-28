@@ -1,3 +1,35 @@
 https://wccoley42.github.io/WilliamCalebColey.github.io/index.html
 
+//Since my fule is connteced to your GitHub repositoy , not directly to VS Code. 
+Edit in VS Code
+        ↓
+Save file
+        ↓
+Commit changes
+        ↓
+Push to GitHub
+        ↓
+GitHub Pages redeploys site (1–2 minutes)
+        ↓
+Live website updates
 
+
+
+//To Start from Completely Scratch and connect VS Code to GitHub
+git init
+git add .
+git commit -m "Initial portfolio site"
+git branch -M main
+git remote add origin https://github.com/yourusername/yourusername.github.io.git
+git push -u origin main
+
+
+
+//To do after done editing a project/program/file
+git add .
+git commit -m "Updated website content"
+git push
+
+
+git pull origin main --rebase //reabse oulls the remote changes, relays your commits on top of them, and keeps the commit history clean
+git push origin main
