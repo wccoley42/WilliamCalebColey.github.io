@@ -1,118 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--standard info and headers any website would use-->
     <meta charset="UTF-8">
-    <title>William Caleb Coley | Portfolio</title>
+    <title>William Caleb Coley</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Info for the contact section-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
 <body>
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">William Caleb Coley</a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container-fluid">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- Left: Image + Name -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/profile.jpg"
+                 alt="Profile"
+                 class="rounded-circle me-2"
+                 width="45" height="45">
+            William Caleb Coley
+        </a>
+
+        <!-- Hamburger Button (Right Side) -->
+        <button class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-end">
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="mission.html">Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="organizations.html">Organizations</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
+
     </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Hero Section (Main Page) -->
 <header class="hero-section text-center text-white">
     <div class="container">
-        <h1 class="display-4">Hi, I'm Caleb Coley</h1>
-        <p class="lead">Bachelor of Science / Mechanical Engineering</p>
-        <p class="lead">Army ROTC / Cadet</p>
+        <h1 class="display-4">Welcome!</h1>
+        <hr class="hero-divider my-3">
+        <p class="lead mb-1">B.S. Mechanical Engineering</p>
+        <p class="small mb-3">
+            <a href="https://www.tntech.edu/" target="_blank">
+                Tennessee Technological University
+            </a>
+        </p>
+        <p class="lead mb-1">Cadet Army ROTC</p>
+        <p class="small">
+            <a href="https://www.tntech.edu/armyrotc/" target="_blank">
+                Tenn Tech Army ROTC
+            </a>
+        </p>
     </div>
 </header>
 
-<!-- About -->
-<section id="about" class="container py-5">
-    <h2>Objective</h2>
-    <p>
-        To obtain an entry-level Mechanical Engineering 
-        position beginning May 2026 in a design build environment 
-        that can utilize my formal education, training and to develop skills 
-        in engineering. 
-    </p>
-</section>
+<!--About Me Section-->
+<section id="about-me" class="container py-5 bg-light text-dark">
+    <h2>About Me</h2>
 
-<!-- Experience -->
-<section id="experience" class="bg-light py-5">
-    <div class="container">
-        <h2>Experience</h2>
+    <div class="row g-4">
 
-        <div class="mb-4">
-            <h5>Job Title — Company</h5>
-            <p><small>2023 – Present</small></p>
-            <p>Short description of what you did.</p>
+        <!-- About Me Card 1 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Background</h5>
+                    <p class="card-text">
+                        Senior at Tennessee Tech University
+                        majoring in Mechanical Engineering with a minor
+                        in Computer Science while becoming a 2nd LT in
+                        the U.S. Army through ROTC. 
+                        Favorite movies, songs, and clips. 
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="mb-4">
-            <h5>Research / Academic Role</h5>
-            <p><small>2022 – 2023</small></p>
-            <p>Short description of work or projects.</p>
+        <!-- About Me Card 2 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Skills & Interests</h5>
+                    <p class="card-text">
+                        Relationship orientated problem solver in various projects,
+                        experience, and leadership roles. Proficient in AutoCad, 
+                        SolidWorks, C++, and 3D printing. Avid movie watcher and outdoorsman. 
+                        Favorite theroreis 
+                        is Klondike, If a tree falls, does anyone hear it, and when you
+                        replace everything, when does it become a new thing.
+                    </p>
+                </div>
+            </div>
         </div>
+
+    </div>
+
+    <!-- Learn More Button -->
+    <div class="text-center mt-4">
+        <a href="about.html" class="btn btn-learn-more">Learn More About Me</a>
     </div>
 </section>
 
-<!-- Projects -->
-<section id="projects" class="container py-5">
+<!--Mission Section-->
+<section id="mission" class="container py-5 bg-light text-dark">
+    <h2>Mission</h2>
+
+    <div class="row g-4">
+
+        <!-- About Me Card 1 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Mission</h5>
+                    <p class="card-text">
+                        Senior at Tennessee Tech University
+                        majoring in Mechanical Engineering with a minor
+                        in Computer Science while becoming a 2nd LT in
+                        the U.S. Army through ROTC. 
+                        Favorite movies, songs, and clips. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Card 2 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Leadership Style</h5>
+                    <p class="card-text">
+                        Relationship orientated problem solver in various projects,
+                        is Klondike, If a tree falls, does anyone hear it, and when you
+                        replace everything, when does it become a new thing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Learn More Button -->
+    <div class="text-center mt-4">
+        <a href="mission.html" class="btn btn-learn-more">Learn More About Mission</a>
+    </div>
+</section>
+
+<section id="experience" class="container py-5 bg-light text-dark">
+    <h2>Experience</h2>
+
+    <div class="row g-4">
+
+        <!-- Experience 1 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Engineering Intern - Hutchinson FMS</h5>
+                    <p class="card-text">
+                        Optimize efficiency across 2 plants by developing expertise in 
+                        fluid management systems, GD&T, project management, and 
+                        manufacturing processes while working with a collaborative 
+                        team of 20+ engineers.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Army ROTC Cadet - United States Army Reserve</h5>
+                    <p class="card-text">
+                        Army Reserve Officers' Training Corps is a 3-5 year leadership 
+                        course that teaches dedication, selfless service, teamwork, 
+                        courage, critical thinking, and a sense of duty as an Officer 
+                        in the United States Army.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Learn More Button -->
+    <div class="text-center mt-4">
+        <a href="experience.html" class="btn btn-learn-more">Learn More About Experience</a>
+    </div>
+</section>
+
+<!-- Projects Section (Main Page) -->
+<section id="projects" class="container py-5 text-dark">
     <h2>Projects</h2>
 
     <div class="row g-4">
 
+        <!-- Project 1 -->
         <div class="col-md-6">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm border-0">
                 <div class="card-body">
-                    <h5 class="card-title">AI Project</h5>
+                    <h5 class="card-title">Mechanical Vehicle - Go-Kart Protoype</h5>
                     <p class="card-text">
-                        Description of an AI model or coding project.
+                        Serviced a Husqvarna HU 775 mower and engineered a 17"x65" 
+                        wooden go-kart chassis with a functional steering system, 
+                        designed to support 200+ lbs., demonstrating mechanical 
+                        design and fabrication skills.
                     </p>
-                    <a href="#" class="btn btn-dark">View Code</a>
                 </div>
             </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="col-md-6">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm border-0">
                 <div class="card-body">
-                    <h5 class="card-title">Web Development Project</h5>
+                    <h5 class="card-title">SolidWorks - 3D V6 Engine</h5>
                     <p class="card-text">
-                        Description of a web application you built.
+                        Designed and modeled a 3D V6 engine in SolidWorks taking 
+                        over 6 hours, completing an assembly of 180+ individual 
+                        components and demonstrating advanced CAD and mechanical 
+                        assembly skills.
                     </p>
-                    <a href="#" class="btn btn-dark">View Project</a>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <!-- Learn More Projects button only -->
+    <div class="text-center mt-4">
+        <a href="projects.html" class="btn btn-learn-more">Learn More About Projects</a>
+    </div>
+</section>
+
+<section id="organizations" class="container py-5 text-dark">
+    <h2>Organizations</h2>
+
+    <div class="row g-4">
+
+        <!-- Organization 1 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Student Government Association - Army ROTC Senator</h5>
+                    <p class="card-text">
+                        Protect the rights of 10,500+ students, promote 
+                        involvement in campus life, and ensure students' 
+                        voices are heard by the university administrations 
+                        by coordinating and with a SGA of 60+ senators.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Organization 2 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Rotaract Club - Treasurer</h5>
+                    <p class="card-text">
+                        Responsibilities of organizing and calculating the 
+                        annual budget and coordinating with the president and 
+                        club officers to project future management.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Learn More Button -->
+    <div class="text-center mt-4">
+        <a href="organizations.html" class="btn btn-learn-more">Learn More About Organizations</a>
+    </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="bg-dark text-white text-center py-5">
+<section id="contact" class="contact-section text-white py-5">
     <div class="container">
-        <h2>Contact</h2>
-        <p>Phone: (615) 478-5432</p>
-        <p>Email: calebcoley10@gmail.com</p>
-        <p>GitHub: github.com/yourusername</p>
+        <div class="row align-items-center text-center text-md-start">
+
+            <!-- LEFT: Contact Info -->
+            <div class="col-md-4 mb-4 mb-md-0 text-md-start">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (615) 478-5432</p>
+                <p><strong>Email:</strong> calebcoley10@gmail.com</p>
+            </div>
+
+            <!-- CENTER: QR + BingProjects -->
+            <div class="col-md-4 mb-4 mb-md-0 text-center">
+                
+                <!-- QR Code -->
+                <div class="mb-3">
+                    <img src="images/qr-code.png" 
+                         alt="QR Code" 
+                         width="90" height="90" 
+                         class="img-fluid rounded mx-auto d-block">
+                </div>
+
+                <!-- BingProjects -->
+                <h4 class="mt-2">@BingProjects</h4>
+            </div>
+
+            <!-- RIGHT: Social Media -->
+            <div class="col-md-4 text-center text-md-end">
+                <h4>Connect</h4>
+                <a href="https://github.com/wccoley42" target="_blank" class="social-icon me-2">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/william-c-coley" target="_blank" class="social-icon">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+
+        </div>
     </div>
 </section>
 
