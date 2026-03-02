@@ -33,3 +33,6 @@ git push
 
 git pull origin main --rebase //reabse oulls the remote changes, relays your commits on top of them, and keeps the commit history clean
 git push origin main
+
+is Klondike, If a tree falls, does anyone hear it, and when you
+                        replace everything, when does it become a new thing.
