@@ -1,5 +1,7 @@
 https://wccoley42.github.io/WilliamCalebColey.github.io/index.html
 
+file:///C:/Users/caleb/OneDrive/Documents/VS%20Code/portfolio-site/index.html
+
 //Since my fule is connteced to your GitHub repositoy , not directly to VS Code. 
 Edit in VS Code
         ↓
