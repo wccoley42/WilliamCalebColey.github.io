@@ -33,7 +33,7 @@ git commit -m "Updated website content"
 git push
 
 
-git pull origin main --rebase //reabse oulls the remote changes, relays your commits on top of them, and keeps the commit history clean
+git pull origin main --rebase //rebase pulls the remote changes, relays your commits on top of them, and keeps the commit history clean
 git push origin main
 
 is Klondike, If a tree falls, does anyone hear it, and when you
